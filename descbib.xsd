@@ -3,13 +3,12 @@
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	elementFormDefault="qualified" >
 	<xs:annotation>
-	  <xs:documentation>Schema for descriptive bibliography.</xs:documentation>
+	  <xs:documentation>Schema for descriptive bibliography entries.</xs:documentation>
 	</xs:annotation>
 
 	<!-- Document element -->
 
 	<xs:element name="descbib" type="BibliographicDescription"/>
-
 	<xs:complexType name="BibliographicDescription">
 	 	<xs:sequence>
 			<xs:element name="shortTitle" type="ShortTitle" />
@@ -46,19 +45,23 @@
 				<xs:element name="height" type="xs:string" />
 				<xs:element name="width" type="xs:string" />
 	 		</xs:complexType>
+
 			<xs:element name="collationFormula" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
 			<xs:element name="signingStatment" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
 			<xs:element name="countLeaves" type="xs:string" />
+
 	 		<xs:complexType name="paginationStatement" minOccurs="0">
 				<xs:element name="summaryPages" type="xs:string" />
 				<xs:element name="countPages" type="xs:string" />
 	 		</xs:complexType>
+
 		</xs:sequence>
 	</xs:complexType>
 
 	<xs:complexType name="technicalNote" type="TechnicalNote">
 	 	<xs:sequence>
 			<xs:element name="positionSignature" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+
 	 		<xs:complexType name="typeNote">
 				<xs:element name="countColumns" type="xs:string" minOccurs="0" />	
 	 			<xs:complexType name="dimTextBlock" minOccurs="0" >
@@ -77,6 +80,7 @@
 	 				<xs:element name="dim20" type="xs:string" minOccurs="0" /> 				
 	 			</xs:complexType>
 	 		</xs:complexType>
+
 			<xs:complexType name="paperNote" minOccurs="0">
 				<xs:element name="sortPaper" type="xs:string" />
 				<xs:element name="commentPaper" type="xs:string" />
@@ -87,13 +91,15 @@
 					<xs:element name="locWatermark" type="xs:string" />
 				</xs:complexType>		
 	 		</xs:complexType>
+
 			<xs:complexType name="binding" minOccurs="0">
 				<xs:element name="material" type="xs:string" />
 				<xs:element name="bindType" type="xs:string" />
 				<xs:element name="spine" type="xs:string" />
 				<xs:element name="decoNote" type="xs:string" />
 				<xs:element name="condBinding" type="xs:string" />
-	 		</xs:complexType>			
+	 		</xs:complexType>
+			
 			<xs:element name="pressFigures" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
 			<xs:element name="figures" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
