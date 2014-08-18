@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <xs:schema targetNamespace="https://raw.githubusercontent.com/mjordan/descbib/master/descbib.xsd"
 	xmlns="https://raw.githubusercontent.com/mjordan/descbib/master/descbib.xsd"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -99,7 +100,7 @@
 				<xs:element name="decoNote" type="xs:string" />
 				<xs:element name="condBinding" type="xs:string" />
 	 		</xs:complexType>
-			
+
 			<xs:element name="pressFigures" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
 			<xs:element name="figures" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
