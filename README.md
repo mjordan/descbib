@@ -1,4 +1,4 @@
 descbib
 =======
 
-XML schema for descriptive bibliographies
+XML schema for descriptive bibliography entries.
